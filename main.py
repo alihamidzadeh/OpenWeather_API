@@ -36,7 +36,7 @@ creat_table(con,cur)
 
 while (True):
     # ct = input("Enter the city name: ")
-    data_weather = get_Weather_data()
+    data_weather = get_Weather_data('Tehran')
     insert_data(con,cur,data_weather)
     print(data_weather)
     time.sleep(0.5)
